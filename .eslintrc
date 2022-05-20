@@ -1,0 +1,42 @@
+{
+    "extends": [
+        "google",
+        "prettier",
+        "eslint:recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:react/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "ecmaFeatures": {
+            "jsx": true,
+            "tsx": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "jest": true
+    },
+    "rules": {
+        "react/react-in-jsx-scope": 0,
+        "react-hooks/rules-of-hooks": "error",
+        "no-console": 0,
+        "react/state-in-constructor": 0,
+        "indent": 0,
+        "linebreak-style": 0,
+        "react/prop-types": 0,
+        "jsx-a11y/click-events-have-key-events": 0,
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        ],
+        "require-jsdoc": "off"
+        // "prettier/prettier": ["error"]
+    },
+    "plugins": ["prettier", "react", "react-hooks"]
+}
